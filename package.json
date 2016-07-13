@@ -1,0 +1,55 @@
+{
+  "name": "flex-table-grid",
+  "version": "0.1.0",
+  "description": "Flexbox grid width table fallback.",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/fedenko/flex-table-grid.git"
+  },
+  "keywords": [
+    "grid",
+    "flexbox",
+    "web"
+  ],
+  "author": "Constantine Fedenko",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/fedenko/flex-table-grid/issues"
+  },
+  "homepage": "https://github.com/fedenko/flex-table-gridx#readme",
+  "engines": {
+    "node": ">=0.10.1"
+  },
+  "files": [
+    "assets",
+    "dist",
+    "stylus/**/*.styl",
+    "gulpfile.js",
+    "index.html",
+    "index.pug",
+    "LICENSE.md"
+  ],
+  "devDependencies": {
+    "backstopjs": "^1.3.1",
+    "bootstrap": "^3.3.6",
+    "browser-sync": "^2.11.1",
+    "casperjs": "^1.1.1",
+    "del": "^2.2.0",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.0",
+    "gulp-cache": "^0.4.2",
+    "gulp-cli": "^1.2.1",
+    "gulp-csso": "^1.1.0",
+    "gulp-load-plugins": "^1.2.0",
+    "gulp-pug": "^3.0.3",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^2.2.0",
+    "gulp-size": "^2.1.0",
+    "gulp-sourcemaps": "^1.6.0",
+    "gulp-stylus": "^2.5.0",
+    "gulp-util": "^3.0.7",
+    "node-notifier": "^4.5.0",
+    "phantomjs": "^2.1.7",
+    "run-sequence": "^1.1.5"
+  }
+}

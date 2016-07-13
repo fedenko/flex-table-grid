@@ -1,0 +1,21 @@
+.row-ft
+  display: table
+  width: 100%
+  table-layout: fixed
+
+media_prefixes = xs, sm, md, xl
+col_classes = ""
+
+for prefix in media_prefixes
+  for index in 1 2 3 4 6 12
+    push(col_classes, ".col-ft-%s-%s" % (prefix index))
+
+{join(',', col_classes)}
+  display: table-cell
+  padding-left:  ceil(grid-gutter-width / 2)
+  padding-right: floor(grid-gutter-width / 2)
+  vertical-align: top
+
+for index in 1 2 3 4 6 12
+  .col-ft-xs-{index}
+    width: percentage(index / grid-columns)

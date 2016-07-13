@@ -1,0 +1,10 @@
+[class*="col-"] {
+  background-color: rgb(238, 238, 238);
+  padding-top: 15px;
+  padding-bottom: 15px;
+  text-align: center;
+}
+
+[class*="col-"]:nth-child(2n+1) {
+    background-color: rgb(153, 153, 153);
+}
