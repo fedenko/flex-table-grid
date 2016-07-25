@@ -8,14 +8,8 @@ Main idea was to build responsive grid system that will be supported by mobile d
 
 1. Install node.js
 2. Install gulp
-4. Install development dependencies
-```
-npm install
-```
-4. Run
-```
-gulp dist
-```
+3. Install development dependencies `$ npm install`
+4. Run `$ gulp dist`
 
 
 ## Inspired by

@@ -18,14 +18,26 @@ for prefix in media_prefixes
   table-layout: fixed
 
 {join(',', col_classes)}
-  display: table-cell
   vertical-align: top
 
-for index in 1..12
-  .col-ft-xs-{index}
-    width: percentage(index / grid-columns)
+make-cols(prefix)
+  for index in 1..12
+    .col-ft-{prefix}-{index}
+      width: percentage(index / grid-columns)
+      display: table-cell
 
-for index in 1..11
-  .col-ft-xs-offset-{index}
-    margin-left: percentage(index / grid-columns)
-    float: left
+  for index in 1..11
+    .col-ft-{prefix}-offset-{index}
+      margin-left: percentage(index / grid-columns)
+      float: left
+
+make-cols(xs)
+
+@media (min-width: screen-sm-min)
+  make-cols(sm)
+
+@media (min-width: screen-md-min)
+  make-cols(md)
+
+@media (min-width: screen-lg-min)
+  make-cols(lg)
