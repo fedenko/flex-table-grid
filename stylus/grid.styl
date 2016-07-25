@@ -1,21 +1,31 @@
+media_prefixes = xs, sm, md, xl
+col_classes = ""
+
+for prefix in media_prefixes
+  push(col_classes, ".col-ft-%s" % prefix)
+  for index in 1..12
+    push(col_classes, ".col-ft-%s-%s" % (prefix index))
+
+.row-ft-padded
+  margin-left: - grid-gutter-width
+  margin-right: - grid-gutter-width
+  .row-ft
+    border-spacing: grid-gutter-width 0
+
 .row-ft
   display: table
   width: 100%
   table-layout: fixed
 
-media_prefixes = xs, sm, md, xl
-col_classes = ""
-
-for prefix in media_prefixes
-  for index in 1 2 3 4 6 12
-    push(col_classes, ".col-ft-%s-%s" % (prefix index))
-
 {join(',', col_classes)}
   display: table-cell
-  padding-left:  ceil(grid-gutter-width / 2)
-  padding-right: floor(grid-gutter-width / 2)
   vertical-align: top
 
-for index in 1 2 3 4 6 12
+for index in 1..12
   .col-ft-xs-{index}
     width: percentage(index / grid-columns)
+
+for index in 1..11
+  .col-ft-xs-offset-{index}
+    margin-left: percentage(index / grid-columns)
+    float: left

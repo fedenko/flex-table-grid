@@ -1,10 +1,19 @@
 [class*="col-"] {
-  background-color: rgb(238, 238, 238);
+  background-color: rgba(238, 238, 238, 0.75);
   padding-top: 15px;
   padding-bottom: 15px;
   text-align: center;
 }
 
-[class*="col-"]:nth-child(2n+1) {
-    background-color: rgb(153, 153, 153);
+[class*="col-"]:nth-child(2n+1)  {
+    background-color: rgba(153, 153, 153, 0.75);
+}
+
+.nested {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.row-ft.row-ft-test {
+  margin-bottom: 15px;
 }
